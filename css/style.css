@@ -33,8 +33,16 @@ body{
     border-radius: 15px;
 }
 
-#nav{
-    
+#nav-space{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding: 20px;
+    border-bottom: 2px solid rgb(230, 228, 228);
+}
+
+#list-space{
+    padding-top: 10px;
+    padding-left: 40px;
 }
 
 
@@ -45,9 +53,40 @@ h1{
     font-size: 40px;
 }
 
+li{
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+p{
+   font-family: 'Oswald', sans-serif;
+}
+
 .button{
     border-radius: 5px;
     background-color: rgb(104, 223, 253);
     border-color: none;
     color: white;
 }
+
+.editorial{
+    width: 20px;
+    padding: 5px 10px;
+    background-color:rgb(62, 212, 250) ;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 8px;
+}
+
+.goals{
+    width: 20px;
+    padding: 5px 10px;
+    background-color:rgb(211, 53, 250) ;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 8px;
+}
+
