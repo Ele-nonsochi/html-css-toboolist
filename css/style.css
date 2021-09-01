@@ -57,13 +57,17 @@ h1{
 li{
     list-style-type: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
 }
 
 p{
    font-family: 'Oswald', sans-serif;
 }
 
+.list-title{
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
 .button{
     border-radius: 5px;
     background-color: rgb(104, 223, 253);
