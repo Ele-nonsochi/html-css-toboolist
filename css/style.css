@@ -70,7 +70,7 @@ p{
     color: white;
 }
 
-.editorial{
+.bubble{
     width: 20px;
     padding: 5px 10px;
     background-color:rgb(62, 212, 250) ;
@@ -80,13 +80,34 @@ p{
     font-size: 8px;
 }
 
-.goals{
-    width: 20px;
-    padding: 5px 10px;
-    background-color:rgb(211, 53, 250) ;
-    text-align: center;
-    border-radius: 20px;
+.editorial{
+    background-color:rgb(62, 212, 250);
     color: white;
-    font-size: 8px;
 }
+
+.goals{
+    background-color: violet;
+    color: white;
+}
+
+.recruiting{
+    background-color: rgb(148, 247, 148);
+    color: white;
+}
+
+.mobile{
+    background-color: orange;
+    color: white;
+}
+
+.website{
+    background-color: rgb(216, 86, 173);
+    color: white;
+}
+
+.sale{
+    background-color: rgb(104, 161, 104);
+    color: white;
+}
+
 
