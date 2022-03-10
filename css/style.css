@@ -1,146 +1,181 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
+
+/*--------- 1. Reset ---------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(230, 228, 228) ;
+/*--------- 2. Text ---------*/
+
+body {
+  min-height: 100vh;
 }
 
-#main-container{
-    border-top: 1px solid rgb(230, 228, 228);
-    background-color: white;
+h1,
+h2 {
+  font-family: "Glory", sans-serif;
+  display: inline-block;
 }
 
-#container{
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    
+.title_app {
+  font-weight: 700;
+  font-size: 40px;
 }
 
-#logo{
-    width: 70px;
-    vertical-align: middle;
+h2 {
+  font-weight: 500;
 }
 
-#main-page{
-    width: 800px;
-    border: 5px solid white;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 15px;
+li {
+  list-style: none;
 }
 
-#nav-space{
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding: 20px;
-    border-bottom: 2px solid rgb(230, 228, 228);
+li,
+button {
+  font-family: "Open Sans", sans-serif;
 }
 
-#list-space{
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    
+button {
+  font-weight: 600;
 }
 
-h1{
-    vertical-align: middle;
-    display: inline-block;
-    font-size: 40px;
+/*-------------- 3. Layout --------------*/
+
+body {
+  min-height: 100vh;
+  background: rgb(243, 243, 243);
 }
 
-li{
-    list-style-type: none;
+header {
+  padding: 10px 0 10px 30px;
+  background: white;
 }
 
-.list-title{
-    list-style-type: none;
-    font-size: 20px;
+.logo_boolean,
+.title_app {
+  vertical-align: middle;
 }
 
-.button{
-    border-radius: 5px;
-    background-color: rgb(104, 223, 253);
-    border-color: rgb(104, 223, 253);
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
+.title_app {
+  margin-left: 5px;
 }
 
-.button2{
-    border-radius: 5px;
-    background-color:white;
-    border-color: lightgrey;
-    color: lightgrey;
-    padding-left: 5px;
-    padding-right: 5px;
+.container {
+  width: 800px;
+  background: white;
+  border-radius: 8px;
+  margin: 30px auto 20px;
 }
 
-.check{
-    color: rgb(95, 219, 95);
-    background-color: rgb(255, 255, 255);
-    border: 0.5px solid rgb(95, 219, 95);
-    font-size: 10px;
-    border-radius: 50%;
-    padding-left:  1px;
-    padding-right: 1px;
-    border-bottom: 2px;
+.add_tasks {
+  padding: 15px 50px 10px;
+  border-bottom: 1px solid rgb(243, 243, 243);
 }
 
-.cross{
-    color: red;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px solid red;
-    font-size: 15px;
-    border-radius: 50%;
-    padding-left:  1px;
-    padding-right: 1px;
-    border-bottom: 2px;
+.container_tasks {
+  padding: 50px;
 }
 
-.bubble{
-    width: 20px;
-    padding: 5px 10px;
-    background-color:rgb(62, 212, 250) ;
-    text-align: center;
-    border-radius: 20px;
-    color: white;
-    font-size: 8px;
+.section_tasks {
+  padding: 15px 0;
 }
 
-.editorial{
-    background-color:rgb(62, 212, 250);
-    color: white;
+.new_task {
+  padding-top: 0;
 }
 
-.goals{
-    background-color: violet;
-    color: white;
+.upcoming {
+  padding-bottom: 0;
 }
 
-.recruiting{
-    background-color: rgb(148, 247, 148);
-    color: white;
+.task {
+  padding: 10px 0;
 }
 
-.mobile{
-    background-color: orange;
-    color: white;
+.status_task {
+  margin-right: 10px;
 }
 
-.website{
-    background-color: rgb(216, 86, 173);
-    color: white;
+.tag_category {
+  margin-left: 10px;
 }
 
-.sale{
-    background-color: rgb(104, 161, 104);
-    color: white;
+/*--------- 4. Style omponents --------*/
+
+/*BUTTONS*/
+button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
+.btn_add_task {
+  color: white;
+  background: rgba(69, 171, 234, 255);
+  border: none;
+}
 
+.btn_add_section {
+  background: transparent;
+  border: 1px solid rgb(211, 211, 211);
+  color: rgb(211, 211, 211);
+}
+
+/*TASKS*/
+
+/*Status del task*/
+
+.status_task {
+  display: inline-block; /*Rende possibile la modifica delle dimensioni dello <span>*/
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.done {
+  border: 2px solid rgba(110, 197, 176, 255);
+  color: rgba(110, 197, 176, 255);
+  padding-left: 3px;
+}
+
+.undone {
+  border: 2px solid rgba(236, 88, 79, 255);
+  color: rgba(236, 88, 79, 255);
+  padding-left: 6px;
+}
+
+/*Stilizzazione tag categoria*/
+
+.tag_category {
+  padding: 5px 15px;
+  border-radius: 13px;
+  color: white;
+}
+
+.editoriale {
+  background: rgba(69, 171, 234, 255);
+}
+
+.q1_goals {
+  background: rgba(156, 114, 228, 255);
+}
+
+.recruiting {
+  background: rgba(100, 192, 169, 255);
+}
+
+.mobile {
+  background: rgba(242, 158, 51, 255);
+}
+
+.website {
+  background: rgba(216, 99, 161, 255);
+}
+
+.sales {
+  background: rgba(176, 201, 38, 255);
+}

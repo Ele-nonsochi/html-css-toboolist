@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Embedding font Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
- 
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
+
     <title>Toboolist</title>
 </head>
+
 <body>
 
-    <!--Logo section-->
-    <header id="main-container">
-        <div id="container">
-            <img src="img/Logo.png" alt="logo" id="logo">
-            <h1>Toboolist</h1>
-        </div>
-    <!--End logo section-->
+    <!-- Start Header -->
+    <header>
+        <img class="logo_boolean" src="img/Logo.png" alt="Logo Toboolist">
+        <h1 class="title_app">Toboolist</h1>
     </header>
-    <!--sviluppo del contenuto-->
+    <!-- End Header -->
+
+
     <main>
 
-        <div id="main-page">
-            <div id="nav-space">
-                <button class="button">Add Task</button>
-                <button class="button2">Add Section</button>
+      
+        <div class="container">
+
+            <!-- Button Section-->
+            <div class="add_tasks">
+                <button class="btn_add_task">Add Task</button>
+                <button class="btn_add_section">Add Section</button>
             </div>
+            <!-- End Button Section-->
+            
+            
+            <div class="container_tasks">
+                <!-- New Task Start -->
+                <div class="section_tasks new_task">
+                    <details> 
+                        <summary> <h2>New Task</h2> </summary>
+                        <ul>
+                            <li class="task"><span class="status_task done">&check;</span>Quarterly Newsletter<span class="tag_category editoriale">Editorial</span></li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- New Tak End-->
 
-    <!--Start List-->
+                <!-- Today Start-->
+                <div class="section_tasks today">
+                    <details> 
+                        <summary> <h2>Today</h2> </summary>
+                        <ul>
+                            <li class="task"><span class="status_task done">&check;</span>Recruiting blog post<span class="tag_category editoriale">Editorial</span></li>
+                            <li class="task"><span class="status_task done">&check;</span>Mobile app luaunch<span class="tag_category q1_goals">Q1 Goals</span></li>
+                            <li class="task"><span class="status_task undone">&cross;</span>Interview John H.<span class="tag_category recruiting">Recruiting</span></li>
+                            <li class="task"><span class="status_task done">&check;</span>Submit update to mobile storefonts<span class="tag_category mobile">Mobile</span></li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- Today End -->
 
-    <div id="list-space">
-             <ul>
-                <li class="list-title"><h3>&#11206; New Task</h3></li>
-                <li><span class="check">&#10003;</span> Quarterly Newsletter <span class="bubble editorial">Editorial</span></li>
-            </ul>
+                <!-- Upcomin Start -->
+                <div class="section_tasks upcoming">
+                    <details> 
+                        <summary> <h2>Upcoming</h2> </summary>
+                        <ul>
+                            <li class="task"><span class="status_task undone">&cross;</span>Schedule meeting with Alex</li>
+                            <li class="task"><span class="status_task done">&check;</span>Homepage refresh<span class="tag_category website">Website</span></li>
+                            <li class="task"><span class="status_task done">&check;</span>Onboard new Sales team members<span class="tag_category sales">Sales</span></li>
+                            <li class="task"><span class="status_task done">&check;</span>Submit update to mobile storefonts<span class="tag_category editoriale">Editorial</span></li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- Upcomin End -->
+            </div>
+            
 
-            <br>
-
-            <ul>
-                <li class="list-title"><h3>&#11206; Today</h3></li>
-                <li><span class="check">&#10003;</span> Recruiting blog post  <span class="bubble editorial"> Editorial</span></li>
-                <li><span class="check">&#10003;</span> Mobile app Launch  <span class="bubble goals"> Q1 Goals</span></li>
-                <li><span class="cross">&#9747;</span> Interview John H. <span class="bubble recruiting"> Recruiting</span></li>
-                <li><span class="check">&#10003;</span> Summit update to mobile storefront<span class="bubble mobile"> Mobile</span></li>
-             </ul>
-
-                <br>
-
-            <ul>
-                <li class="list-title"><h3>&#11206; Upcoming</h3></li>
-                <li><span class="cross">&#9747;</span> Schedule meeting with Alex</li>
-                <li><span class="check">&#10003;</span> Home page refresh<span class="bubble website"> Website</span></li>
-                <li><span class="check">&#10003;</span> Onboard new sales team members<span class="bubble sale"> Sale</span></li>
-                <li><span class="check">&#10003;</span> Review editorial calendare<span class="bubble editorial"> Editorial</span></li>
-                    
-
-            </ul>
         </div>
-    <!--End list-->
-       </div>
-    
-
-
+        
 
     </main>
     
-    
+
 </body>
 </html>
